@@ -1,11 +1,17 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
-public class AddressBook {
-    List<Contact> adBook = new ArrayList<>();
+public class AddressBook <PlaceHolder>{
+    List<PlaceHolder> adBook = new ArrayList<>();
 
-    public void addContact(Contact c1){
+
+
+    public void display(){
+        System.out.println(adBook);
+    }
+
+    public void addContact(PlaceHolder c1){
         adBook.add(c1);
-        System.out.println("Contact is added");
     }
 }
